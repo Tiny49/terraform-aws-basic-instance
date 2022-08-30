@@ -41,7 +41,7 @@ resource "aws_network_interface" "web" {
 
 resource "aws_instance" "web" {
   ami           = "ami-00785f4835c6acf64" # us-west-2 
-  instance_type = "t2.micro"
+  instance_type = "t2.large"
   associate_public_ip_address = true
   tags = local.common_tags
 }
